@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E49782E27A80F42000D0945 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49782D27A80F42000D0945 /* Extension + UIView.swift */; };
+		0E85EBB527A6C4240004813F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85EBB427A6C4240004813F /* Network.swift */; };
 		0EB72F5627A2D23700A823E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F5527A2D23700A823E8 /* AppDelegate.swift */; };
 		0EB72F5827A2D23700A823E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F5727A2D23700A823E8 /* SceneDelegate.swift */; };
-		0EB72F5A27A2D23700A823E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F5927A2D23700A823E8 /* MainViewController.swift */; };
+		0EB72F5A27A2D23700A823E8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F5927A2D23700A823E8 /* StartViewController.swift */; };
 		0EB72F5D27A2D23700A823E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB72F5B27A2D23700A823E8 /* Main.storyboard */; };
 		0EB72F5F27A2D23900A823E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB72F5E27A2D23900A823E8 /* Assets.xcassets */; };
 		0EB72F6227A2D23900A823E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB72F6027A2D23900A823E8 /* LaunchScreen.storyboard */; };
 		0EB72F6A27A2E29900A823E8 /* astronomyPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F6927A2E29900A823E8 /* astronomyPicture.swift */; };
 		0EB72F6D27A2E4F500A823E8 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F6C27A2E4F500A823E8 /* PictureViewController.swift */; };
-		0EC33AB727A3C61C002B3EC1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC33AB627A3C61C002B3EC1 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E49782D27A80F42000D0945 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		0E85EBB427A6C4240004813F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		0EB72F5227A2D23700A823E8 /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB72F5527A2D23700A823E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB72F5727A2D23700A823E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EB72F5927A2D23700A823E8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0EB72F5927A2D23700A823E8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0EB72F5C27A2D23700A823E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EB72F5E27A2D23900A823E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB72F6127A2D23900A823E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB72F6327A2D23900A823E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EB72F6927A2E29900A823E8 /* astronomyPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astronomyPicture.swift; sourceTree = "<group>"; };
 		0EB72F6C27A2E4F500A823E8 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
-		0EC33AB627A3C61C002B3EC1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +66,13 @@
 			children = (
 				0EB72F5527A2D23700A823E8 /* AppDelegate.swift */,
 				0EB72F5727A2D23700A823E8 /* SceneDelegate.swift */,
+				0E49782D27A80F42000D0945 /* Extension + UIView.swift */,
 				0EB72F6B27A2E2A100A823E8 /* Models */,
 				0EB72F7027A2E51C00A823E8 /* Controllers */,
 				0EC33AB827A3C622002B3EC1 /* Services */,
 				0EB72F5B27A2D23700A823E8 /* Main.storyboard */,
-				0EB72F5E27A2D23900A823E8 /* Assets.xcassets */,
 				0EB72F6027A2D23900A823E8 /* LaunchScreen.storyboard */,
+				0EB72F5E27A2D23900A823E8 /* Assets.xcassets */,
 				0EB72F6327A2D23900A823E8 /* Info.plist */,
 			);
 			path = NASA;
@@ -86,7 +89,7 @@
 		0EB72F7027A2E51C00A823E8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0EB72F5927A2D23700A823E8 /* MainViewController.swift */,
+				0EB72F5927A2D23700A823E8 /* StartViewController.swift */,
 				0EB72F6C27A2E4F500A823E8 /* PictureViewController.swift */,
 			);
 			path = Controllers;
@@ -95,7 +98,7 @@
 		0EC33AB827A3C622002B3EC1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0EC33AB627A3C61C002B3EC1 /* NetworkManager.swift */,
+				0E85EBB427A6C4240004813F /* Network.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,11 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB72F5A27A2D23700A823E8 /* MainViewController.swift in Sources */,
+				0EB72F5A27A2D23700A823E8 /* StartViewController.swift in Sources */,
 				0EB72F6A27A2E29900A823E8 /* astronomyPicture.swift in Sources */,
+				0E49782E27A80F42000D0945 /* Extension + UIView.swift in Sources */,
 				0EB72F5627A2D23700A823E8 /* AppDelegate.swift in Sources */,
-				0EC33AB727A3C61C002B3EC1 /* NetworkManager.swift in Sources */,
 				0EB72F5827A2D23700A823E8 /* SceneDelegate.swift in Sources */,
+				0E85EBB527A6C4240004813F /* Network.swift in Sources */,
 				0EB72F6D27A2E4F500A823E8 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
