@@ -6,44 +6,46 @@
 //
 
 import Foundation
+import Alamofire
+
+enum NetworkError: Error {
+    case badURL
+    case noData
+    case decodingError
+}
 
 class NetworkManager {
-    
-    enum NetworkError: Error {
-        case badURL
-        case noData
-    }
     
     static let shared = NetworkManager()
     
     private init() {}
     
-    func fetchData(from url: String?, with completion: @escaping(Result <AstronomyPicture, NetworkError>) -> Void) {
+    func fetchData(from url: String, with completion: @escaping(Result <AstronomyPicture, NetworkError>) -> Void) {
+        AF.request(url)
         
-        guard let url = URL(string: url ?? "" ) else {
-            completion(.failure(.badURL))
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                completion(.failure(.noData))
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                let astronomyPicture = try JSONDecoder().decode(AstronomyPicture.self, from: data)
-                DispatchQueue.main.async {
+            .responseJSON{ dataResponse in
+                guard let statusCode = dataResponse.response?.statusCode else { return }
+                if (200...299).contains(statusCode) {
+                    guard let value = dataResponse.value else { return }
+                    guard let astronomyPictureData = value as? [String : Any] else { return }
+                    
+                    let astronomyPicture = AstronomyPicture(
+                        astronomyPictureData: astronomyPictureData
+                    )
                     completion(.success(astronomyPicture))
+                    
+                } else {
+                    completion(.failure(.decodingError))
+                    guard let error = dataResponse.error else { return }
+                    print(error)
                 }
-            } catch let error {
-                print(error)
+                
             }
-            
-        }.resume()
     }
 }
+
+
+
 
 
 

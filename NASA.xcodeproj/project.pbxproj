@@ -17,6 +17,7 @@
 		0EB72F6227A2D23900A823E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB72F6027A2D23900A823E8 /* LaunchScreen.storyboard */; };
 		0EB72F6A27A2E29900A823E8 /* astronomyPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F6927A2E29900A823E8 /* astronomyPicture.swift */; };
 		0EB72F6D27A2E4F500A823E8 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB72F6C27A2E4F500A823E8 /* PictureViewController.swift */; };
+		61E76509488C2A81DF2D3CEB /* Pods_NASA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958CD93886837E1E7CE3D2F0 /* Pods_NASA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		0EB72F6327A2D23900A823E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EB72F6927A2E29900A823E8 /* astronomyPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astronomyPicture.swift; sourceTree = "<group>"; };
 		0EB72F6C27A2E4F500A823E8 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		958CD93886837E1E7CE3D2F0 /* Pods_NASA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34E006FB2C743FC897B4F0F /* Pods-NASA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASA.release.xcconfig"; path = "Target Support Files/Pods-NASA/Pods-NASA.release.xcconfig"; sourceTree = "<group>"; };
+		F8A73E91B890C5424843FB11 /* Pods-NASA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASA.debug.xcconfig"; path = "Target Support Files/Pods-NASA/Pods-NASA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E76509488C2A81DF2D3CEB /* Pods_NASA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				0EB72F5427A2D23700A823E8 /* NASA */,
 				0EB72F5327A2D23700A823E8 /* Products */,
+				E74FF2D8F4CF295B4B86F15E /* Pods */,
+				4D06CB3AC09D46C92D2519A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4D06CB3AC09D46C92D2519A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				958CD93886837E1E7CE3D2F0 /* Pods_NASA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E74FF2D8F4CF295B4B86F15E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8A73E91B890C5424843FB11 /* Pods-NASA.debug.xcconfig */,
+				B34E006FB2C743FC897B4F0F /* Pods-NASA.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB72F6627A2D23900A823E8 /* Build configuration list for PBXNativeTarget "NASA" */;
 			buildPhases = (
+				EEAD287A65C67FB831BF0FB3 /* [CP] Check Pods Manifest.lock */,
 				0EB72F4E27A2D23700A823E8 /* Sources */,
 				0EB72F4F27A2D23700A823E8 /* Frameworks */,
 				0EB72F5027A2D23700A823E8 /* Resources */,
+				DDDB26F37B0F07183BC2CB59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDDB26F37B0F07183BC2CB59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NASA/Pods-NASA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NASA/Pods-NASA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NASA/Pods-NASA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAD287A65C67FB831BF0FB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NASA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0EB72F4E27A2D23700A823E8 /* Sources */ = {
@@ -324,6 +393,7 @@
 		};
 		0EB72F6727A2D23900A823E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A73E91B890C5424843FB11 /* Pods-NASA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +423,7 @@
 		};
 		0EB72F6827A2D23900A823E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34E006FB2C743FC897B4F0F /* Pods-NASA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

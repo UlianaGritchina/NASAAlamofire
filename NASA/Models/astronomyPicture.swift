@@ -12,4 +12,11 @@ struct AstronomyPicture: Decodable {
     let date: String?
     let explanation: String?
     let url: String?
+    
+    init(astronomyPictureData: [String: Any]) {
+        self.title = astronomyPictureData["title"] as? String
+        self.date = astronomyPictureData["date"] as? String
+        self.explanation = astronomyPictureData["explanation"]as? String
+        self.url = astronomyPictureData["url"] as? String
+    }
 }
