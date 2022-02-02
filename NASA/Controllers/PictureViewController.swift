@@ -23,22 +23,25 @@ class PictureViewController: UIViewController {
         super.viewDidLoad()
         
         infoView.layer.opacity = 0
+        pictureImage.layer.opacity = 0
         
         indicator.startAnimating()
         indicator.hidesWhenStopped = true
         
         showData()
-
+        
     }
     
     @IBAction func showInfo(_ sender: UIBarButtonItem) {
         shown.toggle()
-        infoView.show(shown: shown)
+        infoView.show(shown: shown, start: 0, end: 0.8)
         infoView.layer.opacity = shown ? 0.8 : 0
+        
     }
     
     private func showData() {
-        NetworkManager.shared.fetchData(from: "https://api.nasa.gov/planetary/apod?api_key=j927yMuuumpGvzeDtYe5YUsObO9FzOEnNhp0FnZX") { result in
+        NetworkManager.shared.fetchData(
+            from: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY") { result in
             switch result {
                 
             case .success(let astronomyPicture):
@@ -52,6 +55,8 @@ class PictureViewController: UIViewController {
                 
                 DispatchQueue.main.async {
                     self.indicator.stopAnimating()
+                    self.pictureImage.show(start: 0, end: 1)
+                    self.pictureImage.layer.opacity = 1
                 }
                 
             case .failure(let error):

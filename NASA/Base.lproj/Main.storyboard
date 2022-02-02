@@ -86,15 +86,15 @@
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0R-L9-lGo">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqh-du-Xf7">
-                                        <rect key="frame" x="20" y="148" width="374" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYq-4Y-VJL">
                                         <rect key="frame" x="20" y="438.5" width="374" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqh-du-Xf7">
+                                        <rect key="frame" x="20" y="389" width="374" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -102,8 +102,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GYq-4Y-VJL" secondAttribute="trailing" constant="20" symbolic="YES" id="9OG-Ij-ToL"/>
-                                    <constraint firstItem="kqh-du-Xf7" firstAttribute="top" secondItem="K0R-L9-lGo" secondAttribute="top" constant="148" id="IiT-ab-lyD"/>
                                     <constraint firstAttribute="trailing" secondItem="kqh-du-Xf7" secondAttribute="trailing" constant="20" symbolic="YES" id="O7m-gA-4cD"/>
+                                    <constraint firstItem="GYq-4Y-VJL" firstAttribute="top" secondItem="kqh-du-Xf7" secondAttribute="bottom" constant="23" id="aa3-9E-ED0"/>
                                     <constraint firstItem="GYq-4Y-VJL" firstAttribute="centerY" secondItem="K0R-L9-lGo" secondAttribute="centerY" id="dhb-z9-Fej"/>
                                     <constraint firstItem="kqh-du-Xf7" firstAttribute="leading" secondItem="K0R-L9-lGo" secondAttribute="leading" constant="20" symbolic="YES" id="iiL-yK-8f8"/>
                                     <constraint firstItem="GYq-4Y-VJL" firstAttribute="centerX" secondItem="K0R-L9-lGo" secondAttribute="centerX" id="zLs-F9-PRx"/>
